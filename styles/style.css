@@ -78,7 +78,7 @@ ol {
 }
 
 .result__video-container {
-  margin-block-end: 16px;
+  margin-block-end: 38px;
   inline-size: 711px;
   block-size: 368px;
 }
@@ -183,7 +183,7 @@ ol {
   line-height: normal;
   background: transparent;
   inline-size: 226px;
-  block-size: 29px;
+  block-size: 26px;
   appearance: none;
 }
 
@@ -193,7 +193,9 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-inline-end: 5px;
   border:  1px solid #fff;
   inline-size: 19px;
@@ -214,13 +216,13 @@ ol {
 
 .search-form__submit-button {
   inline-size: 194px;
-  block-size: 34px;
+  block-size: 36px;
 }
 
 .more-button {
   padding: 2px;
   inline-size: 399px;
-  block-size: 34px;
+  block-size: 36px;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -233,17 +235,15 @@ input[type="text"]:focus {
   outline: none;
 }
 
-input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
+input[type='checkbox']:checked + .search-form__pseudo-checkbox::after {
   content: '';
-  position: absolute;
-  inset: 1px;
   background-color: #fff;
   inline-size: 15px;
   block-size: 15px;
 }
 
 .search-form__checkbox-list > .search-form__label {
-  block-size: 21px;
+  block-size: 22px;
 }
 
 .search-form__checkbox-list > .search-form__label:hover {
