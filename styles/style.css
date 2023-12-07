@@ -50,9 +50,8 @@ ol {
 .content {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   gap: 30px;
-  margin-inline: 0 auto;
-  margin-block: 133px;
   inline-size: 1140px;
 }
 
