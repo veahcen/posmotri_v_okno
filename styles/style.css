@@ -78,9 +78,9 @@ ol {
 }
 
 .result__video-container {
-  margin-block-end: 38px;
+  margin-block-end: 16px;
   inline-size: 711px;
-  block-size: 368px;
+  block-size: 386px;
 }
 
 .result__video {
@@ -96,7 +96,7 @@ ol {
 
 .content__video-card {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
 }
 
 .content__video-card-thumbnail {
@@ -104,10 +104,6 @@ ol {
   object-position: center;
   inline-size: 194px;
   block-size: 103px;
-}
-
-.content__video-card-description-container {
-  inline-size: 100%;
 }
 
 .result__video-container {
@@ -169,22 +165,21 @@ ol {
   flex-direction: row;
   width: fit-content;
   cursor: pointer;
-  block-size: 31px;
 }
 
 .search-form__textfield {
   border: none;
   border-block-start: 1px solid #fff;
   border-block-end: 1px solid #fff;
-  color: rgba(255, 255, 255, 0.70);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   line-height: normal;
   background: transparent;
   inline-size: 226px;
   block-size: 26px;
   appearance: none;
+  font-family: inherit;
 }
 
 .search-form__checkbox-list {
@@ -203,7 +198,6 @@ ol {
 }
 
 .button {
-  margin-block-end: 3px;
   border: 1px solid #FFF;
   color: #fff;
   font-weight: 700;
@@ -221,21 +215,20 @@ ol {
 
 .more-button {
   padding: 2px;
-  inline-size: 399px;
+  inline-size: 100%;
   block-size: 36px;
 }
 
 .search-form__label:has(:focus-visible) {
-  outline: none;
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
 
-input[type="text"]:focus {
+.search-form__textfield:focus {
   outline: none;
 }
 
-input[type='checkbox']:checked + .search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
   background-color: #fff;
   inline-size: 15px;
@@ -251,7 +244,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::after {
 }
 
 .search-form__fieldset:nth-child(2) {
-  margin-block-end: 8px;
+  margin-block-end: 4px;
 }
 
 .search-form__label:active {
@@ -266,13 +259,13 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::after {
   background: #545050;
 }
 
-button:focus-visible:focus {
+button:focus {
   outline: none;
 }
 
 button:focus-visible {
   outline: 1px solid #fff;
-  outline-offset: 2px;
+  outline-offset: -4px;
 }
 
 .content__card-link {
@@ -299,3 +292,7 @@ button:focus-visible {
 .content__card-link:active {
   background: #545050;
 }
+
+/* спасибо за отличное ревью,
+pixelperfect не очень понятно иногда, как его точно расположить(подогнать) на странице и получается
+с расхождениями, хотя думал, что там их нет, а после гит теста появились */
